@@ -1,0 +1,15 @@
+<!-- HTML Structure -->
+<div class="container">
+  <h1>Welcome!</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="greetUser()">Say Hello</button>
+  <p id="display"></p>
+</div>
+
+<script>
+  // JavaScript Interactivity
+  function greetUser() {
+    const name = document.getElementById('nameInput').value;
+    document.getElementById('display').innerText = "Hello, " + name + "!";
+  }
+</script>
